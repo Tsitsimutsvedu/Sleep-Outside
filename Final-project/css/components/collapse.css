@@ -1,0 +1,37 @@
+.collapse {
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.collapse.show {
+    display: block;
+    animation: 0.3s ease-in slideDown;
+    animation-fill-mode: forwards;
+    overflow: auto;
+}
+
+.collapse.hide {
+    display: block;
+    animation: 0.3s ease-out slideUp;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 2000px;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        max-height: 2000px;
+    }
+    to {
+        max-height: 0;
+        display: none;
+    }
+}

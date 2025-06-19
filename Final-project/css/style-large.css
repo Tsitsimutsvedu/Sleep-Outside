@@ -1,0 +1,20 @@
+@media screen and (min-width: 992px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .position-lg-relative {
+        position: relative;
+    }
+    .row-lg {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .rounded-lg-2 {
+        border-radius: 5px;
+    }
+    .grid-template-columns-2-1 {
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+    }
+}

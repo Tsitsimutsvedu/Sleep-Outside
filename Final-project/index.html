@@ -1,93 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page bountiful</title>
-
-    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-    <link href="styles/base.css" rel="stylesheet">
-    <link href="styles/medium.css" rel="stylesheet">
-    <link href="styles/large.css" rel="stylesheet">
-    <link>
-    <link>
-</head>
-<body>
-    <header>
-        <p class="logo">Fresh<strong class="point-logo">.</strong></p>
-        <div id="hamburgerBtn"><span><strong>&#9776</strong></span><span><strong>X</strong></span></div>
-        <nav>
-            <ul id="primaryNav">
-                <li><a class="active" href="index.html"><strong>Home</strong></a></li>
-                <li><a href="about.html"><strong>About Us</strong></a></li>
-                <li><a href="fresh.html"><strong>Fresh</strong></a></li>
-            </ul>
-        </nav>
-        <hr id="hr-nav">
-    </header>
-    <main class="grid-home">
-        <h1 class="hero-text">Taste in every healthy sip</h1>
-        <p class="description-hero">For a natural energy drink a stewbarry smoothie, juicier then your.</p>
-        <form class="form-button" action="./fresh.html">
-            <input class="order-button" value="Order Now" type="submit" title="button to fresh page">
-        </form>
-
-        <div class="display-number-orders">My Orders: <span id="drink-total"></span></div>
-        <img class="img-juice" src="images/juice.png" title="image of juice">
-        <img class="img-juice2" src="images/juicelarge.png" title="image of juice 2">
-        <p class="paragraph-juice">The northern and southern coastal regions are very different, but both are part of the California coastal region. The northern region is more mountainous and rocky with chilly water. The southern region isn't as cold and has more sandy beaches.</p>
-        <section class="weatherSection">
-            <h2 class="headingWeather">Weather</h2>
-            <div id="top-weath" class="true-center">
-                <img src="https://via.placeholder.com/150" alt="placeholder" id="weath-img" title="placeholder of image">
-                <div class="weather-text">
-                    <span id="conditions"></span>
-                    <span class="bigger-h" id="temp"></span>
-                    <span id="humidity"></span>
+    <html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Checker</title>
+        <meta name="description" content="Quickly check website performance, HTML, and CSS validation in one place. This web app streamlines testing using APIs, eliminating the need for multiple tools like Lighthouse.">
+        <meta name="author" content="Tsitsi Mutsvedu">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.mjs" type="module"></script>
+    </head>
+    <body class="bg-gray-light">
+        <div class="page-wrapper">
+            <header class="bg-primary py-2 ps-3 pe-2 d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                    <img src="img/logo.svg" width="30" height="30" class="me-2" alt="Website Checker Logo">
+                    <span class="fs-2 text-white">Website Checker</span>
                 </div>
-            </div>
-            <table>
-                <tr>
-                    <th></th>
-                    <th id="dOW1"></th>
-                    <th id="dOW2"></th>
-                    <th id="dOW3"></th>
-                </tr>
-                <tr>
-                    <td>High</td>
-                    <td id="hi1"></td>
-                    <td id="hi2"></td>
-                    <td id="hi3"></td>
-                </tr>
-                <tr>
-                    <td>Low</td>
-                    <td id="lo1"></td>
-                    <td id="lo2"></td>
-                    <td id="lo3"></td>
-                </tr>
-            </table> 
-        </section>
-    </main>
-    <footer>
-        <hr class="footer-hr">
-        <p><strong>Fresh. © 2025 - Gohouri Ange Junior</strong></p>
-        <p>angejunior246@gmail.com</p>
-        <p>+225 0759412321</p>
-        <section class="social-links">
-            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" title="icon of facebook"></a>
-            <a href="https://www.telegram.com/" target="_blank"><img src="images/telegram.png" title="incon of telegram"></a>
-            <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" title="icon of twitter"></a>
-        </section>
-        <p>Last Modified: <span class="last-modified"></span></p>
-    </footer>
-    <script src="scripts/nav.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/display-number.js"></script>
-    <script src="scripts/last-update.js"></script>
-</body>
+                <div class="d-flex align-items-center d-lg-none">
+                    <button class="btn btn-primary fs-2 fa fa-history p-2 border-primary-subtle" data-toggle="drawer" data-target="history-drawer"></button>
+                </div>
+            </header>
+            <main class="p-2">
+                <div class="alert align-items-center mb-2 position-relative" id="message" role="alert">
+                    <span class="fa me-2" id="alert-icon"></span>
+                    <div id="alert-message"></div>
+                    <span class="fa fa-xmark position-absolute top-0 end-0 mt-2 me-2" data-close="alert" data-target="message"></span>
+                </div>
+                <div class="d-lg-grid grid-template-columns-2-1">
+                    <div>
+                        <div class="card mb-2">
+                            <div class="card-header text-center bg-secondary text-light">
+                                Enter URL Here
+                            </div>
+                            <div class="card-body">
+                                <div class="d-grid">
+                                    <input type="url" class="form-control mb-2" placeholder="https://your-url-here.com/" id="url" autocomplete="url">
+                                    <button class="btn btn-primary d-block" id="check-button" disabled>Check</button>
+                                </div>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#" data-toggle="collapse" data-target="selected-measurements">
+                                    <span id="selected-measurements-count">0</span> Measurements Selected
+                                </a>
+                            </div>
+                            <div class="collapse" id="selected-measurements">
+                                <div class="p-4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="checkbox" value="best-practices" id="best-practices-checkbox">
+                                            <label for="best-practices-checkbox">Best Practices</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="checkbox" value="performance" id="performance-checkbox">
+                                            <label for="performance-checkbox">Performance</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="checkbox" value="accessibility" id="accessibility-checkbox">
+                                            <label for="accessibility-checkbox">Accessibility</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="checkbox" value="seo" id="seo-checkbox">
+                                            <label for="seo-checkbox">SEO</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="checkbox" value="html" id="html-checkbox">
+                                            <label for="html-checkbox">HTML Validation</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="checkbox" value="css" id="css-checkbox">
+                                            <label for="css-checkbox">CSS Validation</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 results" id="pagespeed-insights-results">
+                            <div class="card-header text-center bg-secondary text-light" data-target="pagespeed-insights-results-container" data-toggle="collapse">
+                                PageSpeed Insights Results
+                            </div>
+                            <div class="collapse card-body p-0 show" id="pagespeed-insights-results-container">
+                                <div class="border-bottom category-result" id="best-practices">
+                                    <div class="d-flex p-3">
+                                        <div class="spinner-container me-4 self-center">
+                                            <div class="spinner-border text-secondary fs-4 spinner-5" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>
+                                        <div class="fs-1 fw-bold me-3 text-secondary score" id="best-practices-score">0%</div>
+                                        <div class="w-100">
+                                            <div class="fw-bold mb-1">Best Practices</div>
+                                            <div>
+                                                <div class="progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar bg-secondary" style="width: 0%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="fa fa-caret-down btn btn-outline-secondary border d-block rounded-0" data-toggle="collapse" data-target="best-practices-results"></div>
+                                    </div>
+                                    <div class="collapse bg-secondary-light" id="best-practices-results">
+                                        <div class="p-4 ps-3"></div>
+                                    </div>
+                                </div>
+                                <div class="border-bottom category-result" id="performance">
+                                    <div class="d-flex p-3">
+                                        <div class="spinner-container me-4">
+                                            <div class="spinner-border text-secondary fs-4 spinner-5" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>
+                                        <div class="fs-1 fw-bold me-3 text-secondary score" id="performance-score">0%</div>
+                                        <div class="w-100">
+                                            <div class="fw-bold mb-1">Performance</div>
+                                            <div>
+                                                <div class="progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar bg-secondary" style="width: 0%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="fa fa-caret-down btn btn-outline-secondary border d-block rounded-0" data-toggle="collapse" data-target="performance-results"></div>
+                                    </div>
+                                    <div class="collapse bg-secondary-light" id="performance-results">
+                                        <div class="p-4 ps-3"></div>
+                                    </div>
+                                </div>
+                                <div class="border-bottom category-result" id="accessibility">
+                                    <div class="d-flex p-3">
+                                        <div class="spinner-container me-4">
+                                            <div class="spinner-border text-secondary fs-4 spinner-5" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>
+                                        <div class="fs-1 fw-bold me-3 text-secondary score" id="accessibility-score">0%</div>
+                                        <div class="w-100">
+                                            <div class="fw-bold mb-1">Accessibility</div>
+                                            <div>
+                                                <div class="progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar bg-secondary" style="width: 0%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="fa fa-caret-down btn btn-outline-secondary border d-block rounded-0" data-toggle="collapse" data-target="accessibility-results"></div>
+                                    </div>
+                                    <div class="collapse bg-secondary-light" id="accessibility-results">
+                                        <div class="p-4 ps-3"></div>
+                                    </div>
+                                </div>
+                                <div class="category-result" id="seo">
+                                    <div class="d-flex p-3">
+                                        <div class="spinner-container me-4">
+                                            <div class="spinner-border text-secondary fs-4 spinner-5" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>
+                                        <div class="fs-1 fw-bold me-3 text-secondary score" id="seo-score">0%</div>
+                                        <div class="w-100">
+                                            <div class="fw-bold mb-1">SEO</div>
+                                            <div>
+                                                <div class="progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar bg-secondary" style="width: 0%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="fa fa-caret-down btn btn-outline-secondary border d-block rounded-0" data-toggle="collapse" data-target="seo-results"></div>
+                                    </div>
+                                    <div class="collapse bg-secondary-light" id="seo-results">
+                                        <div class="p-4 ps-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2 results" id="html-results">
+                            <div class="card-header text-center bg-secondary text-light" data-toggle="collapse" data-target="html-results-container">
+                                HTML Validation Results
+                            </div>
+                            <div class="collapse p-3 show" id="html-results-container"></div>
+                        </div>
+                        <div class="card mb-2 results" id="css-results">
+                            <div class="card-header text-center bg-secondary text-light" data-toggle="collapse" data-target="css-results-container">
+                                CSS Validation Results
+                            </div>
+                            <div class="collapse p-3 show" id="css-results-container"></div>
+                        </div>
+                    </div>
+                    <div class="drawer d-lg-block position-lg-relative rounded-lg-2" tabindex="-1" id="history-drawer">
+                        <div class="drawer-header bg-secondary">
+                            <div class="drawer-title">Results History</div>
+                            <button class="btn btn-secondary fa fa-xmark position-absolute top-0 end-0 mt-3 me-3 fs-3 p-2 border-secondary-subtle d-lg-none" data-toggle="drawer" data-target="history-drawer"></button>
+                        </div>
+                        <div class="drawer-body d-grid gap-2 results-history"></div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="bg-primary text-center text-light py-4">
+                    <div>&copy;2025 &bull; Website Checker</div>
+                    <div>Tsitsi Mutsvedu &bull; WDD 330 Final Project</div>
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>

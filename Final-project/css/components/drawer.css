@@ -1,0 +1,112 @@
+.drawer {
+    display: none;
+    width: 100%;
+    max-width: 412px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.drawer.show {
+    display: block;
+    animation: 0.3s ease-in slideLeft;
+    animation-fill-mode: forwards;
+}
+
+.drawer.hide {
+    display: block;
+    animation: 0.3s ease-out slideRight;
+    animation-fill-mode: forwards;
+}
+
+.drawer-header {
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+.drawer-title {
+    font-size: 1.5rem;
+}
+
+.drawer-body {
+    padding: 20px;
+}
+
+.bg-drawer-backdrop {
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.bg-drawer-backdrop.show {
+    display: block;
+    animation: 0.3s ease-in fadeIn;
+    animation-fill-mode: forwards;
+}
+
+.bg-drawer-backdrop.hide {
+    display: block;
+    animation: 0.3s ease-out fadeOut;
+    animation-fill-mode: forwards;
+}
+
+.history-item {
+    animation: 0.5s ease-in fadeIn;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(420px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(420px);
+        display: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .drawer {
+        transform: translateX(0) !important;
+        height: fit-content;
+        max-height: 90vh;
+        min-width: 391px;
+    }
+    .bg-drawer-backdrop {
+        display: none !important;
+    }
+    .drawer-title {
+        text-align: center;
+    }
+}

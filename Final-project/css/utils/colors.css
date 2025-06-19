@@ -1,0 +1,35 @@
+.bg-orange {
+    background-color: #dc7035;
+}
+
+.bg-success-light {
+    background-color: #1987544f;
+}
+
+.bg-warning-light {
+    background-color: #ffc10754;
+}
+
+.bg-orange-light {
+    background-color: #dc703570;
+}
+
+.bg-danger-light {
+    background-color: #dc35456b;
+}
+
+.bg-secondary-light {
+    background-color: #6c757d40;
+}
+
+.bg-gray-light {
+    background-color: #0000001f;
+}
+
+.text-orange {
+    color: #dc7035;
+}
+
+.text-bg-orange {
+    background-color: #dc7035;
+}

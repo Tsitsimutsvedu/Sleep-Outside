@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.results {
+    display: none;
+}
+
+.results.show {
+    display: block;
+}
+
+.category-result {
+    display: none;
+}
+
+.category-result.show {
+    display: block;
+}
+
+.score.hide {
+    display: none;
+}
+
+.justify-self-center {
+    justify-self: center;
+}
+
+#html-results-container, #css-results-container {
+    max-height: 90vh;
+    overflow-y: auto;
+}

@@ -1,0 +1,10 @@
+{
+  "name": "website-checker",
+  "version": "1.0.0",
+  "author": {
+    "name": "Tsitsi Mutsvedu",
+    "email": "mutsvedutsitsi@gmail.com"
+  },
+  "main": "index.html",
+  "dependencies": {}
+}
